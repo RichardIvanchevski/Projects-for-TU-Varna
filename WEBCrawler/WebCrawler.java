@@ -12,11 +12,6 @@ public class WebCrawler {
     private Queue<String> urlQueue = new LinkedList<>();
     private List<String> visitedURLs = new ArrayList<>();
 
-    //Предоставеният код използва breadth-first search алгоритъм, за да обхожда уеб, като започва от основен URL адрес
-    // , който се предава като аргумент на метода за обхождане.Използваме опашка, за да съхраняваме URL адресите,
-    // които трябва да посети, и списък, за да съхранява URL адресите, които вече е посетил. Докато преминава през уеб,
-    // той търси URL адреси в HTML
-    // съдържанието на всяка страница и добавя всички открити нови URL адреси към опашката и списъка с посетени URL адреси.
 
     public void crawl(String rootURL, int breakpoint) {
         urlQueue.add(rootURL);

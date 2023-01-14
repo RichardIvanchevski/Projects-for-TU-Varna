@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TestCrawler {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         WebCrawler crawler = new WebCrawler();
